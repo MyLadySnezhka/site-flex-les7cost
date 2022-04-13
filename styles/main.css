@@ -62,7 +62,6 @@
 
 .main-content {
     background: white;
-    border-radius: 3px;
     padding: 20px;
 }
 
@@ -90,14 +89,20 @@
     height: fit-content;
 }
 
-hr {
-    background-color: orange;
-    height: 3px;
+.line-main-container {
+    border-bottom: 3px solid orange;
+    width: 80%;
 }
+    
 
 .guide-main-content {
     dislay: flex;
     flex-wrap: wrap;
+}
+
+.column-main-content {
+    width: 45%;
+
 }
 
 
