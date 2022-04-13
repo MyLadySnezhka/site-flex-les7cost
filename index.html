@@ -5,6 +5,12 @@
 	<meta description="описание сайта для поисковиков">
 	<meta name="keywords" content="">
 	<meta charset="utf-8">
+	<link rel="shortcut icon" href="/images/favicon.svg" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+		rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
 	<link rel="stylesheet" href="./styles/main.css" />
 </head>
@@ -32,7 +38,7 @@
 		</div>
 		<div class="header-guides">
 			<div class="guides">
-				<p>A Complete Guide to Flexbox</p>
+				<h1>A Complete Guide to Flexbox</h1>
 				<p>Our comprehensive guide to CSS flexbox layout. This complete guide explains everything about flexbox, focusing on all
 				the different possible properties for the parent element (the flex container) and the child elements (the flex items).
 				It also includes history, demos, patterns, and a browser support chart.</p>
@@ -43,6 +49,7 @@
 				</div>
 				<div>
 					картинко
+					     тест
 				</div>
 			</div>
 		</div>
@@ -64,18 +71,95 @@
 				</div>
 				<div class="poster-top">
 					постер
+					<p>
+						Reference this guide a lot? Here’s a high-res image you can print!
+					</p>
 				</div>
 			</div>
-			<div class="line-main-container"></div>
+			<div class="line-main-container">
+			</div>
+			<div class="drop-down-blocks">
+				<h3>Background</h3>
+			</div>
+			<div class="drop-down-blocks">
+				<h3>Basics and terminology</h3>
+			</div>				
 			<div class="guide-main-content">
-				<div class="column-main-container">
-					cont 
-				</div>
-				<div class="column-main-container">
-					item 
+				<div class="drop-down-blocks">
+					<h3>Flexbox properties</h3>
 				</div>
 
+				<!-- первый столбик (conteiner) -->
+				<div class="column-main-content">
+					<img src="https://css-tricks.com/wp-content/uploads/2018/10/01-container.svg">
+					<h2>Properties for the Parent <br>
+						(flex container)
+					</h2>
+					<div class="violet-cell">
+						<h4>display</h4>
+						<img src="">
+						<p>This defines a flex container; inline or block depending on the given value. It enables a flex context for all its
+						direct children.
+						</p>
+					</div>
+					<div class="violet-cell">
+						<h4>flex-direction</h4>
+						<img src="https://css-tricks.com/wp-content/uploads/2018/10/flex-direction.svg">
+						<p>This establishes the main-axis, thus defining the direction flex items are placed in the flex container. Flexbox
+							is
+							(aside from optional wrapping) a single-direction layout concept. Think of flex items as primarily laying out
+							either in
+							horizontal rows or vertical columns.
+						</p>
+					</div>
+				</div>
+
+				<!-- второй столюик (item)-->
+				<div class="column-main-content">
+					<img src="https://css-tricks.com/wp-content/uploads/2018/10/02-items.svg">
+					<h2>
+						Properties for the Children<br>
+						(flex items)
+					</h2>
+					<div class="beige-cell">
+						<h4>order</h4>
+						<img src="https://css-tricks.com/wp-content/uploads/2018/10/order.svg">
+					
+						<p>By default, flex items are laid out in the source order. However, the order property controls the order in which
+						they
+						appear in the flex container.</p>
+
+						ТУТ КОД
+
+						<p>Note that CSS columns have no effect on a flex container.</p>
+
+					</div>
+
+				</div>
+				
 			</div>
+			<div class="drop-down-blocks">
+				<h3>Prefixing Flexbox</h3>
+			</div>
+			<div class="drop-down-blocks">
+				<h3>Examples<h3>
+			</div>
+			<div class="drop-down-blocks">
+				<h3>Flexbox Tricks</h3>
+			</div>
+			<div class="drop-down-blocks">
+				<h3>Browser support</h3>
+			</div>
+			<div class="drop-down-blocks">
+				<h3>Bugs</h3>
+			</div>
+			<div class="drop-down-blocks">
+				<h3>Related properties</h3>
+			</div>
+			<div class="drop-down-blocks">
+				<h3>More information</h3>
+			</div>
+			
 		</div>
 
 	</div>
