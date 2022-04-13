@@ -37,6 +37,7 @@
 .header-guides, .main-content {
     display: flex;
     width: 80%;
+    margin: 0 auto;
 }
 
 .header-guides {
@@ -59,7 +60,45 @@
     width:20%;
 }
 
-.main-contant {
+.main-content {
     background: white;
+    border-radius: 3px;
+    padding: 20px;
 }
+
+.top-main-content {
+    display: flex;
+    width: 100%;
+}
+
+.link-top {
+    width:45%;
+    background: #fef6ec;
+    border-radius: 3px;
+
+}
+
+.link-top li {
+    list-style: none;
+}
+
+.poster-top {
+    width:45%;
+    background-color: #fffcf6;
+    border: 1px solid black;
+    border-radius: 3px;
+    height: fit-content;
+}
+
+hr {
+    background-color: orange;
+    height: 3px;
+}
+
+.guide-main-content {
+    dislay: flex;
+    flex-wrap: wrap;
+}
+
+
 
