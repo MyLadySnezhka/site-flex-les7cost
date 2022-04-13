@@ -1,0 +1,65 @@
+.main-container {
+    background-color: #262626;
+    min-height: 600px;
+
+}
+
+.logo-container {
+    display: flex;
+    background-color: black;
+    color: white;
+    height: 28px;
+    padding: 10px;
+}
+
+.logo-container a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+}
+
+.icon {}
+
+.trick {
+    border-right: 1px solid white;
+    padding: 0 5px 0 0;
+}
+
+.menu-items {
+    font-size: 10px;
+    padding: 5px 10px;
+}
+
+.menu-items a:hover {
+    color: #CE242B;
+}
+
+.header-guides, .main-content {
+    display: flex;
+    width: 80%;
+}
+
+.header-guides {
+    margin: 20px auto;
+    border: 1px solid black;
+    color: white;
+}
+
+.guides {
+    width: 60%;
+}
+
+.guides a {
+
+}
+
+.do-community {
+    background: black;
+    border-radius: 5px;
+    width:20%;
+}
+
+.main-contant {
+    background: white;
+}
+
