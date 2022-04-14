@@ -106,6 +106,7 @@
 						</div>
 						<p>Note that CSS columns have no effect on a flex container.</p>
 					</div>
+
 					<div class="violet-cell">
 						<h4>flex-direction</h4>
 						<img src="https://css-tricks.com/wp-content/uploads/2018/10/flex-direction.svg">
@@ -130,16 +131,98 @@
 							<li>column-reverse: same as row-reverse but bottom to top</li>
 						</ul>
 					</div>
+
 					<div class="violet-cell">
+						<h4>flex-wrap</h4>
+						<img src="https://css-tricks.com/wp-content/uploads/2018/10/flex-wrap.svg">
+						<p>By default, flex items will all try to fit onto one line. You can change that and allow the items to wrap as needed with
+						this property.</p>
+
+						КОД
+
+						<ul>
+							<li>nowrap (default): all flex items will be on one line</li>
+							<li>wrap: flex items will wrap onto multiple lines, from top to bottom.</li>
+							<li>wrap-reverse: flex items will wrap onto multiple lines from bottom to top.</li>
+						</ul>
+						<p>There are some <a href="https://css-tricks.com/almanac/properties/f/flex-wrap/">visual demos of flex-wrap here.</a></p>
+					</div>
+
+					<div class="violet-cell">
+						<h4>flex-flow</h4>
+						<p>This is a shorthand for the flex-direction and flex-wrap properties, which together define the flex container’s main and
+						cross axes. The default value is row nowrap.
+						</p>
+
+						КОД
 
 					</div>
-					<div class="violet-cell">
 
-					</div>
 					<div class="violet-cell">
+						<h4>justify-content</h4>
+						<img src="https://css-tricks.com/wp-content/uploads/2018/10/justify-content.svg">
+						<p>This defines the alignment along the main axis. It helps distribute extra free space leftover when either all the flex
+						items on a line are inflexible, or are flexible but have reached their maximum size. It also exerts some control over
+						the alignment of items when they overflow the line.</p>
 
+						КОД
+
+						<ul>
+							<li>flex-start (default): items are packed toward the start of the flex-direction.</li>
+							<li>flex-end: items are packed toward the end of the flex-direction.</li>
+							<li>start: items are packed toward the start of the writing-mode direction.</li>
+							<li>end: items are packed toward the end of the writing-mode direction.</li>
+							<li>left: items are packed toward left edge of the container, unless that doesn’t make sense with the flex-direction, then
+							it behaves like start.</li>
+							<li>right: items are packed toward right edge of the container, unless that doesn’t make sense with the flex-direction, then
+							it behaves like end.</li>
+							<li>center: items are centered along the line</li>
+							<li>space-between: items are evenly distributed in the line; first item is on the start line, last item on the end line</li>
+							<li>space-around: items are evenly distributed in the line with equal space around them. Note that visually the spaces
+							aren’t equal, since all the items have equal space on both sides. The first item will have one unit of space against the
+							container edge, but two units of space between the next item because that next item has its own spacing that applies.</li>
+							<li>space-evenly: items are distributed so that the spacing between any two items (and the space to the edges) is equal.
+							</li>
+						</ul>
+						<p>Note that that browser support for these values is nuanced. For example, space-between never got support from some
+						versions of Edge, and start/end/left/right aren’t in Chrome yet. MDN <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content">has detailed charts</a>. The safest values are
+						flex-start, flex-end, and center.</p>
+						<p>There are also two additional keywords you can pair with these values: safe and unsafe. Using safe ensures that however
+						you do this type of positioning, you can’t push an element such that it renders off-screen (e.g. off the top) in such a
+						way the content can’t be scrolled too (called “data loss”).
+						</p>
 					</div>
+
 					<div class="violet-cell">
+						<h4>align-items</h4>
+						<img src="https://css-tricks.com/wp-content/uploads/2018/10/align-items.svg">
+						<p>
+							This defines the default behavior for how flex items are laid out along the cross axis on the current line. Think of it
+							as the justify-content version for the cross-axis (perpendicular to the main-axis).
+						</p>
+
+						КОД
+
+
+						<ul>
+							<li>stretch (default): stretch to fill the container (still respect min-width/max-width)</li>
+							<li>
+								flex-start / start / self-start: items are placed at the start of the cross axis. The difference between these is
+								subtle, and is about respecting the flex-direction rules or the writing-mode rules.
+							</li>
+							<li>
+								flex-end / end / self-end: items are placed at the end of the cross axis. The difference again is subtle and is about
+								respecting flex-direction rules vs. writing-mode rules.
+							</li>
+							<li>center: items are centered in the cross-axis</li>
+							<li>
+								baseline: items are aligned such as their baselines align
+							</li>
+						</ul>
+						<p>
+							The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords (although note
+							<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-items">browser support</a>), and deal with helping you prevent aligning elements such that the content becomes inaccessible.
+						</p>
 
 					</div>
 					<div class="violet-cell">
