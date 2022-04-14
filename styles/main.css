@@ -6,7 +6,7 @@
 
 body {
     font-family: Roboto, Arial, sans-serif;
-    font-size: 13px;
+    /*font-size: 13px;*/
 }
 
 .logo-container {
@@ -126,13 +126,42 @@ body {
 
 .violet-cell {
     background: linear-gradient(#ebd4ef, #fefefe);
+    padding: 20px;
 }
+
+/* Поменять цвет li и тип шрифта 
+.violet-cell li {
+    ;
+}*/
 
 .beige-cell {
     background: linear-gradient(#ffe8cc, #fefefd);
+    padding: 20px;
+}
+
+.code-conteiner {
+    display: flex;
+    background-color: black;
+    width: 75%;
+    margin 10px auto;
+    border-radius: 5px;
+    padding: 10px;
 }
 
 
+
+
+
+
+
+.credit-container {
+    background-color: black;
+    width: 75%;
+    color: white;
+    border-radius: 3px;
+    padding: 20px;
+    margin: 0 auto; /* Переделать выравнивание! */
+}
 
 
 
