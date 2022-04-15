@@ -125,7 +125,8 @@ body {
     width: 350px;
 }
 
-.violet-cell {
+/*сиреневый градиент*/
+.flex-container-color {
     background: linear-gradient(#ebd4ef, #fefefe);
     padding: 20px;
 }
@@ -135,7 +136,8 @@ body {
     ;
 }*/
 
-.beige-cell {
+/*бежевый градиент*/
+.flex-item-color {
     background: linear-gradient(#ffe8cc, #fefefd);
     padding: 20px;
 }
